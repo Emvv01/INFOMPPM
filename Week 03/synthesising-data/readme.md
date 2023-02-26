@@ -1,0 +1,2 @@
+As we discussed in class, one method of synthesis is to take one dataset and translate it to another.
+Assume we have the show's episodes from IMDb. However, we do not have any data on collaborative filtering. How can we create a meaningful dataset using an existing database, such as the anime database? Examine both datasets and consider how you can transform the anime dataset to facilitate the IMDb dataset. And, since we have code for jaccard and cosine, let's see what kind of recommendations this setup produces. Are they logical?
