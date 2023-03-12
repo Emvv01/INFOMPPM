@@ -6,8 +6,8 @@ import itertools
 st.set_page_config(layout="wide")
 
 # load the dataset with the ratings
-df_ratings = pd.read_csv('../data/BX-Book-Ratings-Subset.csv', sep=';', encoding='latin-1')
-df_books = pd.read_csv('../data/BX-Books.csv', sep=';', encoding='latin-1')
+df_ratings = pd.read_csv('../../data/BX-Book-Ratings-Subset.csv', sep=';', encoding='latin-1')
+df_books = pd.read_csv('../../data/BX-Books.csv', sep=';', encoding='latin-1')
 
 # initialize a session state with a user
 if 'User-ID' not in st.session_state:
