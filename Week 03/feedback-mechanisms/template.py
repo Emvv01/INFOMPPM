@@ -6,7 +6,7 @@ import datetime
 # save the activities as a file
 def save_activities():
   with open('activities.json', 'w') as outfile:
-    json.dump(st.session_state['activities'], outfile)
+    json.dump(st.session_state['activities'], outfile, indent=4)
 
 # function that processes an activity
 def activity(id, activity):

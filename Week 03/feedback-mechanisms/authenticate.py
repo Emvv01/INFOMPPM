@@ -15,7 +15,7 @@ def authenticate():
 	hashed_passwords = stauth.Hasher(passwords).generate()
 
 	#3. create the authenticator which will create an authentication session cookie with an expiry interval
-	authenticator = stauth.Authenticate(names, names, hashed_passwords, 'streamlit-auth-0','streamlit-auth-0-key',cookie_expiry_days=1)
+	authenticator = stauth.Authenticate(names, names, hashed_passwords, 'streamlit-auth-0','streamlit-auth-0-key', cookie_expiry_days=1)
 
 	#4. display the login form in the sidebar 
 	name, authentication_status, username = authenticator.login('Login','sidebar')
